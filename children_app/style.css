@@ -1,0 +1,189 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+.title{text-align: center; margin-top: 10px;}
+.img {width: 100%; display: block; height:100%;}
+/* -----  MAIN CONTAINER ------*/
+.header-container{
+    background-color: rgb(57, 137, 230);;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.header-container > div {
+    padding: 20px;
+}
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+/*FLIP CARD*/
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+
+/* Image CONTAINER*/
+.grid-container{
+    width: 1000px;
+    margin: 40px auto;
+    background-color: rgb(247, 240, 92);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.img-container{
+   margin: center;
+}
+/*SHAPES & Colors Container*/
+.shape-container{
+    width: 500px;
+    margin: 20px auto;
+    background-color:whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+.shapeDiv{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+}
+.square{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+   
+}
+.rectangle{
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    
+}
+.square, .rectangle, .circle{
+    background-color: rgb(233, 182, 163);
+    color: white;
+    font-size: 1.5em;
+}
+.triangle{
+    width:0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid rgb(233, 182, 163);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+
+}
+.oval{
+    height: 150px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(233, 182, 163);
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    
+}
+.title-shapes, .title-colors{
+    text-align: center;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: rgb(57, 137, 230);
+    color: white;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin-top: 10%;
+}
+.footer > div{
+    border: solid white 2px;
+}
+
+/*--- breakpoint up to 900px (tablet)*/
+@media screen and (max-width:900px){
+    .nav-menu{
+        background-color: white;
+    }
+    .contact{
+        grid-column: span 2;
+    }
+    .followus{
+        grid-column: span 3;
+    }
+}
+/*---- breakpoint up to 600px (smartphone view)-----*/ 
+@media screen and (max-width:600px){
+    .nav-menu{
+        background-color: yellow;
+        grid-column: span 3
+    }
+    .contact{
+        background-color: lightcoral;
+        grid-column: span 3;
+    }
+    .socialmedia{
+        background-color: lightblue  ;
+        grid-column: span 3;
+    }
+}
+@media screen and (max-width: 900px) {
+    .grid-container, .flip-card  {
+      width:  80%;
+      display: auto;
+      margin-bottom: 20px;
+    }
+  }

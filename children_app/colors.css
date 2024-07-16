@@ -1,0 +1,147 @@
+/* -----  TOP COLOR CONTAINER ------*/
+.header-container{
+    background-color: rgb(57, 137, 230);;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.header-container > div {
+    padding: 20px;
+}
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+
+/*FLIP CARDS*/
+.flip-section{
+    box-sizing: border-box;
+    grid-template-columns: 5;
+    display: table;
+    width: 100%;
+    margin-bottom: 10%;
+
+}
+.text-front{
+    margin-top: 40%;
+}
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 3px solid whitesmoke;
+    padding: 0 20px;
+    float: left;
+    width: 20%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgb(224, 216, 162);
+    color: white;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: Red;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.shape-container{
+    width: 800px;
+    margin: 20px auto;
+    background-color:whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+.shapeDivcolors{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    border: solid red 3px;
+ }   
+.title-shapes, .title-colors{
+    text-align: center;
+}
+/*COLOR SCHEMES*/
+.red{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    background-color: red;
+}
+
+/*FOOTER*/
+  .footer{
+    background-color: rgb(57, 137, 230);
+    color: white;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+.footer > div{
+    border: solid white 2px;
+}
+@media screen and (max-width:900px){
+  .nav-menu{
+      background-color: white;
+  }
+  .contact{
+      grid-column: span 2;
+  }
+  .followus{
+      grid-column: span 3;
+  }
+}
+/*---- breakpoint up to 600px (smartphone view)-----*/ 
+@media screen and (max-width:600px){
+  .main-container{
+      background-color: yellow;
+      grid-column: span 3
+  }
+  .contact{
+      background-color: lightcoral;
+      grid-column: span 3;
+  }
+  .socialmedia{
+      background-color: lightblue  ;
+      grid-column: span 3;
+  }
+}
+@media screen and (max-width: 900px) {
+    .main-container, .header-container {
+      width:  100%;
+      display: auto;
+      margin-bottom: 20px;
+    }
+  }

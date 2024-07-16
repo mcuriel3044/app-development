@@ -1,0 +1,199 @@
+/* -----  TOP SHAPE CONTAINER ------*/
+.header-container{
+    background-color: rgb(57, 137, 230);;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.header-container > div {
+    padding: 20px;
+}
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+/*Shapes*/
+.btnsquare{
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    columns: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px orange;
+}
+.btnsquare:hover {background-color:  blue;}
+
+.btnrectangle{
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    columns: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px yellow;
+}
+.btnrectangle:hover {background-color: green;}
+
+.btncircle{
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    columns: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px red;
+}
+.btncircle:hover {background-color: red;}
+
+.btntriangle{
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    columns: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px blue;
+}
+.btntriangle:hover {background-color: yellow;}
+
+.btnoval{
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    columns: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px green;
+}
+.btnoval:hover {background-color: orange;}
+
+/*SHAPES & Colors Container*/
+.shape-container{
+    width: 800px;
+    margin: 20px auto;
+    background-color:whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+.shapeDiv{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+}
+.square{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    background-color: blue;
+   
+}
+.rectangle{
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    background-color: green;
+    
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    background-color: red;
+    
+}
+.square, .rectangle, .circle{
+    color: white;
+    font-size: 1.5em;
+}
+.triangle{
+    width:0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid yellow;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+
+}
+.oval{
+    height: 150px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+    
+}
+.title-shapes, .title-colors{
+    text-align: center;
+}
+
+/*FOOTER*/
+  .footer{
+    background-color: rgb(57, 137, 230);
+    color: white;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+.footer > div{
+    border: solid white 2px;
+}
+@media screen and (max-width:900px){
+    .nav-menu{
+        background-color: white;
+    }
+    .contact{
+        grid-column: span 2;
+    }
+    .followus{
+        grid-column: span 3;
+    }
+}
+/*---- breakpoint up to 600px (smartphone view)-----*/ 
+@media screen and (max-width:600px){
+    .nav-menu{
+        background-color: yellow;
+        grid-column: span 3
+    }
+    .contact{
+        background-color: lightcoral;
+        grid-column: span 3;
+    }
+    .socialmedia{
+        background-color: lightblue  ;
+        grid-column: span 3;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main-container {
+      width: 25%;
+      display: auto;
+      margin-bottom: 20px;
+    }
+  }
