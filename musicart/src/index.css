@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.title{
+  text-align: center;
+}
+/* --------NAVBARS, JS-----------*/
+.navbar{
+  background-color:aliceblue;
+  display: flex;
+  padding: 20px;
+}
+.navbar div:nth-child(2){
+  margin-left: auto;
+}
+.btngroup button{
+  padding: 0px 20px;
+  border: none;
+  background-color: aliceblue;
+}
+.btngroup button:hover{
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.maincontainer{
+  background-color: aliceblue;
+  margin: center;
+}
+.img{
+  width: 100%;
+  display: block;
+}
+.mainheader{
+  padding: 50px;
+  background-color: aliceblue;
+  text-align: center;
+}
+.container{
+ height: auto;
+ display: flex;
+ margin: 30px auto;
+ background-color: lightblue;
+ padding: 20px;
+}
+.container>div{
+  border: solid gray 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.App_btn{
+  width: auto;
+  margin: 30px center;
+  box-shadow: 2px 2px 5px blue;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn, .readmorebtn{
+  width: 25%;
+  background-color: #ffe4c4;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: medium;
+}
+.btn:hover{
+  background-color: bisque;
+  box-shadow: 1px 1px 5px black;
+  font-weight: bolder;
+}
+.active{
+background-color: orangered;
+box-shadow: 0px 0px 5px 1px gray;
+
+}
